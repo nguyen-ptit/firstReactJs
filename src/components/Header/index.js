@@ -9,6 +9,7 @@ const Header = () => {
 
     const [showMenu, setshowMenu] = useState(false);
     const isMobile = useMedia(breakpoints.sm);
+    
     return (
         <>
             <HeaderWrapper >
@@ -24,13 +25,13 @@ const Header = () => {
                             />
                         </CloseIcon>
                         <Link to="/">
-                            <p className="item">Home</p>
+                            <p className="item" onClick={() => setshowMenu(false)}>Home</p>
                         </Link>
                         <Link to="contact">
-                            <p className="item">Contact</p>
+                            <p className="item" onClick={() => setshowMenu(false)}>Contact</p>
                         </Link>
                         <Link to="about">
-                            <p className="item">About</p>
+                            <p className="item" onClick={() => setshowMenu(false)}>About</p>
                         </Link>
                     </Nav>
                 )} 

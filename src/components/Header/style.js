@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
     justify-content: space-between;
     padding: 30px 100px;
     @media ${breakpoints.sm}{
-        padding: 20px;
+        padding: 20px 20px 20px 40px;
     }
 
     .name{
