@@ -9,10 +9,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           {routers.map((item, index) => (
-            <Route path={item.path} element={item.element}>
+            <Route path={item.path} element={item.element} key={index} >
               {
                 item.children && item.children.map((child, i) => (
-                  <Route index={child.index} path={child.path} element={child.element}  />
+                  <Route index={child.index} path={child.path} element={child.element} key={i} />
                 ))
               }
             </Route>

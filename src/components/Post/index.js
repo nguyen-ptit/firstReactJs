@@ -226,25 +226,6 @@ const courses = [
 
 const CourseItem = props => (
     <div>
-        {/* <div>
-            <img src={props.thumbnailUrl} alt="thumbnail_url" />
-            <div>
-                <div>
-                    <img src={props.userAvatarUrl} alt="avata"></img>
-                    <div>
-                        <p>{props.userName}</p>
-                        <p>{props.publishedAt}</p>
-                    </div>
-                </div>
-                <div>
-                    <p>{props.title}</p>
-                    <p>{props.metaDescription}</p>
-                </div>
-                <div>
-                    <p>{props.reactionsCount}</p>
-                </div>
-            </div>
-        </div> */}
 
         <div>
             <Flex>

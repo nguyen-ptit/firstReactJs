@@ -2,41 +2,59 @@ import styled from "styled-components";
 import breakpoints from "../../theme/breakpoints";
 
 export const HeaderWrapper = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
-    // @media ${breakpoints.sm}{
-    //     padding: 20px;
-    // }
+    padding: 30px 100px;
+    @media ${breakpoints.sm}{
+        padding: 20px;
+    }
 
     .name{
         font-size: 22px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: bold;
-
+        font-style: italic;
+    }
+    .mobile{
+        display: none;
+        @media ${breakpoints.sm} {
+            display: block;
+        }
+    }
+`;
+export const Nav = styled.div`
+    display: flex;
+    align-items: center;
+    @media ${breakpoints.sm}{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
     }
 
-    // .mobile{
-    //     display: none;
-    //     @media ${breakpoints.sm} {
-    //         display: block;
-    //     }
-    // }
-`;
-
-export const Nav = styled.div `
-    display: flex;
-    
     .item{
-        font-size: 18px;
+        font-size: 14px;
         padding: 0 10px;
         color: black;
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-
     }
 `;
-
+export const MenuIcon = styled.img`
+    display: none;
+    @media ${breakpoints.sm}{
+        display: block;
+    }
+`;
+export const CloseIcon = styled.div`
+    display: none;
+    @media ${breakpoints.sm}{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    img{
+        margin: 20px;
+    }
+`;
